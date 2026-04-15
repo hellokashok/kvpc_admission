@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kongu Velaar Polytechnic College – Admissions 2025–26</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #1a3fa8;
+    --blue-dark: #0d2270;
+    --yellow: #f5c200;
+    --yellow-dark: #d4a200;
+    --green: #1a7a2e;
+    --green-light: #e8f7eb;
+    --orange: #e07b00;
+    --orange-light: #fff3e0;
+    --purple: #5b2d8e;
+    --purple-light: #f0e8fb;
+    --red: #c0392b;
+    --white: #ffffff;
+    --off-white: #f8f9ff;
+    --text-dark: #0d1b3e;
+    --shadow: 0 4px 24px rgba(26,63,168,0.13);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Baloo 2', 'Noto Sans Tamil', sans-serif;
+    background: var(--off-white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 60%, #2255cc 100%);
+    color: white;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  .hero-inner {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 24px 32px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .hero-logo {
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.2);
+    overflow: hidden;
+  }
+  .hero-logo svg { width: 64px; height: 64px; }
+  .hero-text { flex: 1; }
+  .hero-text .college-name-en {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(22px, 4vw, 38px);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    color: var(--yellow);
+    text-transform: uppercase;
+  }
+  .hero-text .college-name-ta {
+    font-size: clamp(14px, 2.5vw, 20px);
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    margin-top: 4px;
+  }
+  .hero-text .location {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 6px;
+  }
+  .hero-badges {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .hero-badge {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* ── ADMISSIONS BANNER ── */
+  .admissions-banner {
+    background: linear-gradient(90deg, var(--red) 0%, #e74c3c 100%);
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(18px, 3.5vw, 28px);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: pulse-bg 2s ease-in-out infinite;
+  }
+  @keyframes pulse-bg {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.92; }
+  }
+  .admissions-banner span {
+    background: var(--yellow);
+    color: var(--red);
+    padding: 2px 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+
+  /* ── TAGLINE ── */
+  .tagline {
+    background: white;
+    text-align: center;
+    padding: 20px 24px;
+    border-bottom: 3px solid var(--yellow);
+  }
+  .tagline p {
+    font-size: clamp(14px, 2.2vw, 18px);
+    font-weight: 600;
+    color: var(--blue-dark);
+    line-height: 1.7;
+  }
+
+  /* ── SECTION LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 40px 0; }
+  .section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 5px solid var(--yellow);
+    padding-left: 14px;
+    margin-bottom: 28px;
+  }
+
+  /* ── SCHOLARSHIPS GRID ── */
+  .scholarships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+  .scholarship-card {
+    border-radius: 16px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .scholarship-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(26,63,168,0.18); }
+  .scholarship-card.green { background: var(--green-light); border-top: 4px solid var(--green); }
+  .scholarship-card.blue  { background: #e8f0fe; border-top: 4px solid var(--blue); }
+  .scholarship-card.orange{ background: var(--orange-light); border-top: 4px solid var(--orange); }
+  .scholarship-card.purple{ background: var(--purple-light); border-top: 4px solid var(--purple); }
+  .scholarship-card.yashasvi { background: linear-gradient(135deg, #fff3e0, #fce4ec); border-top: 4px solid #d81b60; grid-column: 1 / -1; }
+  .sch-icon { font-size: 32px; margin-bottom: 10px; }
+  .sch-title { font-weight: 700; font-size: 15px; color: var(--text-dark); margin-bottom: 6px; }
+  .sch-amount { font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 700; }
+  .scholarship-card.green  .sch-amount { color: var(--green); }
+  .scholarship-card.blue   .sch-amount { color: var(--blue); }
+  .scholarship-card.orange .sch-amount { color: var(--orange); }
+  .scholarship-card.purple .sch-amount { color: var(--purple); }
+  .scholarship-card.yashasvi .sch-amount { color: #d81b60; }
+  .sch-desc { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.5; }
+
+  /* ── COURSES ── */
+  .courses-bg { background: white; }
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .course-card {
+    border: 1.5px solid #e0e6ff;
+    border-radius: 14px;
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    cursor: default;
+  }
+  .course-card:hover { border-color: var(--blue); box-shadow: 0 4px 18px rgba(26,63,168,0.12); transform: translateY(-2px); }
+  .course-icon {
+    width: 54px; height: 54px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+  }
+  .course-info .code {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+    color: var(--blue); margin-bottom: 2px;
+  }
+  .course-info .name {
+    font-size: 14px; font-weight: 700; color: var(--text-dark); line-height: 1.3;
+  }
+  /* icon bg colours */
+  .icon-auto { background: #fff3e0; } .icon-cs { background: #e3f2fd; }
+  .icon-mech { background: #fce4ec; } .icon-petro { background: #e8f5e9; }
+  .icon-civil { background: #fff8e1; } .icon-chem { background: #f3e5f5; }
+  .icon-eee  { background: #e0f7fa; } .icon-mlt { background: #fbe9e7; }
+  .icon-ece  { background: #e8eaf6; }
+
+  /* ── ELIGIBILITY ── */
+  .elig-bg { background: var(--blue-dark); color: white; }
+  .elig-bg .section-title { color: white; border-color: var(--yellow); }
+  .elig-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .elig-card {
+    background: rgba(255,255,255,0.08);
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 28px 20px;
+    text-align: center;
+  }
+  .elig-card .label { font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 8px; }
+  .elig-card .years { font-family: 'Oswald', sans-serif; font-size: 52px; font-weight: 700; color: var(--yellow); line-height: 1; }
+  .elig-card .sub { font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 6px; font-weight: 600; }
+  .elig-card .via { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 4px; }
+  .internship-note {
+    text-align: center;
+    margin-top: 24px;
+    background: rgba(245,194,0,0.15);
+    border: 1.5px solid var(--yellow);
+    border-radius: 12px;
+    padding: 16px 24px;
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  /* ── PLACEMENT ── */
+  .placement-badge {
+    background: linear-gradient(135deg, #0d2270, #1a3fa8);
+    color: white;
+    border-radius: 20px;
+    padding: 36px 40px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .placement-pct {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--yellow);
+    line-height: 1;
+  }
+  .placement-label { font-size: 20px; font-weight: 700; margin-top: 6px; letter-spacing: 1px; text-transform: uppercase; }
+  .placement-sub { font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 8px; font-style: italic; }
+
+  /* ── CONTACT ── */
+  .contact-bg { background: linear-gradient(135deg, #1a3fa8, #0d2270); color: white; }
+  .contact-bg .section-title { color: white; border-color: var(--yellow); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  @media (max-width: 580px) { .contact-grid { grid-template-columns: 1fr; } }
+  .contact-item { display: flex; align-items: flex-start; gap: 14px; }
+  .contact-icon {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(255,255,255,0.12); display: flex;
+    align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;
+  }
+  .contact-detail .title { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+  .contact-detail .value { font-size: 17px; font-weight: 700; color: var(--yellow); }
+  .contact-detail .address { font-size: 13px; color: rgba(255,255,255,0.8); line-height: 1.6; margin-top: 4px; }
+  .cta-btn {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--yellow);
+    color: var(--blue-dark);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 14px 36px;
+    border-radius: 40px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .cta-btn:hover { background: #ffd700; transform: scale(1.04); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #060e24;
+    color: rgba(255,255,255,0.45);
+    text-align: center;
+    padding: 18px;
+    font-size: 12px;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.55s ease both; }
+  .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; } .delay-4 { animation-delay: 0.4s; }
+
+  @media (max-width: 680px) {
+    .hero-inner { flex-direction: column; text-align: center; }
+    .hero-badges { justify-content: center; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .placement-pct { font-size: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-logo fade-up">
+      <!-- College emblem placeholder with initials -->
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="32" cy="32" r="30" fill="#1a3fa8" stroke="#f5c200" stroke-width="3"/>
+        <text x="50%" y="38" text-anchor="middle" font-family="Oswald,sans-serif" font-size="18" font-weight="700" fill="#f5c200">KVPC</text>
+        <text x="50%" y="52" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,0.7)">EST. PERUNDURAI</text>
+      </svg>
+    </div>
+    <div class="hero-text fade-up delay-1">
+      <div class="college-name-en">Kongu Velaar Polytechnic College</div>
+      <div class="college-name-ta">கொங்கு வேளாள் பாலிடெக்னிக் கல்லூரி</div>
+      <div class="location">📍 Perundurai – Erode, Tamil Nadu</div>
+      <div class="hero-badges">
+        <span class="hero-badge">✔ AICTE Approved</span>
+        <span class="hero-badge">✔ Affiliated to DOTE, Chennai</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ADMISSIONS BANNER -->
+<div class="admissions-banner fade-up">
+  🎓 Admissions Open <span>2025 – 2026</span>
+</div>
+
+<!-- TAGLINE -->
+<div class="tagline fade-up delay-1">
+  <p>உங்கள் கனவுகளை நனவாக்குங்கள்... தரமான கல்வி... சிறந்த எதிர்காலத்திற்கு!</p>
+  <p style="font-size:14px;color:#555;font-weight:400;margin-top:6px;">Realise your dreams — quality education for a brighter future!</p>
+</div>
+
+<!-- SCHOLARSHIPS -->
+<section>
+  <div class="container">
+    <div class="section-title">💰 Scholarships & Financial Aid</div>
+    <div class="scholarships-grid">
+
+      <div class="scholarship-card green fade-up delay-1">
+        <div class="sch-icon">🎒</div>
+        <div class="sch-title">தமிழ் புதல்வன் / புதுமைப்பெண் திட்டம்</div>
+        <div class="sch-amount">₹1,000<span style="font-size:15px;font-weight:400">/month</span></div>
+        <div class="sch-desc">Govt. school students | State/district rank holders | First-generation graduates</div>
+      </div>
+
+      <div class="scholarship-card blue fade-up delay-2">
+        <div class="sch-icon">🏛️</div>
+        <div class="sch-title">SC / ST Students</div>
+        <div class="sch-amount">FREE</div>
+        <div class="sch-desc">கல்வி கட்டணம் இலவசம் — full tuition fee waiver for SC/ST students</div>
+      </div>
+
+      <div class="scholarship-card orange fade-up delay-3">
+        <div class="sch-icon">🇮🇳</div>
+        <div class="sch-title">மத்திய அரசு – பிரகதி Scholarship</div>
+        <div class="sch-amount">₹50,000</div>
+        <div class="sch-desc">Central Government scholarship — up to ₹50,000 assistance</div>
+      </div>
+
+      <div class="scholarship-card purple fade-up delay-4">
+        <div class="sch-icon">🏅</div>
+        <div class="sch-title">மதிப்பெண் அடிப்படையில் சலுகை</div>
+        <div class="sch-amount">Merit Discount</div>
+        <div class="sch-desc">Tuition fee concession based on academic merit</div>
+      </div>
+
+      <div class="scholarship-card yashasvi fade-up">
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <div>
+            <div class="sch-icon">⭐</div>
+            <div class="sch-title" style="font-size:17px;">Yashasvi Scholarship</div>
+            <div class="sch-desc" style="color:#555;">For BC / MBC students — மாணவ, மாணவியர்களுக்கு (Boys & Girls)</div>
+          </div>
+          <div class="sch-amount" style="margin-left:auto;">BC / MBC</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="courses-bg">
+  <div class="container">
+    <div class="section-title">📚 வழங்கப்படும் துறைகள் — Diploma Programmes Offered</div>
+    <div class="courses-grid">
+
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon icon-auto">🚗</div>
+        <div class="course-info">
+          <div class="code">DAE</div>
+          <div class="name">Automobile Engineering</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-2">
+        <div class="course-icon icon-cs">💻</div>
+        <div class="course-info">
+          <div class="code">DCSE</div>
+          <div class="name">Computer Science Engineering</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon icon-mech">⚙️</div>
+        <div class="course-info">
+          <div class="code">DME</div>
+          <div class="name">Mechanical Engineering</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-2">
+        <div class="course-icon icon-petro">🏭</div>
+        <div class="course-info">
+          <div class="code">DPCT</div>
+          <div class="name">Petrochemical Technology</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon icon-civil">🏗️</div>
+        <div class="course-info">
+          <div class="code">DCIVIL</div>
+          <div class="name">Civil Engineering</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-2">
+        <div class="course-icon icon-chem">🧪</div>
+        <div class="course-info">
+          <div class="code">DCHEMICAL</div>
+          <div class="name">Chemical Engineering</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon icon-eee">⚡</div>
+        <div class="course-info">
+          <div class="code">DEEE</div>
+          <div class="name">Electrical & Electronics Engineering</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-2">
+        <div class="course-icon icon-mlt">🔬</div>
+        <div class="course-info">
+          <div class="code">DMLT</div>
+          <div class="name">Medical Laboratory Technology</div>
+        </div>
+      </div>
+
+      <div class="course-card fade-up delay-1">
+        <div class="course-icon icon-ece">📡</div>
+        <div class="course-info">
+          <div class="code">DECE</div>
+          <div class="name">Electronics & Communication Engineering</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="elig-bg">
+  <div class="container">
+    <div class="section-title">📋 Course Duration & Eligibility</div>
+    <div class="elig-grid">
+
+      <div class="elig-card fade-up delay-1">
+        <div class="label">SSLC Pass</div>
+        <div class="years">3</div>
+        <div class="sub">Years Diploma</div>
+        <div class="via">10th Standard Passed</div>
+      </div>
+
+      <div class="elig-card fade-up delay-2">
+        <div class="label">12th Pass (Lateral Entry)</div>
+        <div class="years">2</div>
+        <div class="sub">Years Diploma</div>
+        <div class="via">Direct Second Year Entry</div>
+      </div>
+
+      <div class="elig-card fade-up delay-3" style="grid-column: span 1;">
+        <div class="label">Internship</div>
+        <div class="years" style="font-size:36px;">6 mo.</div>
+        <div class="sub">With Stipend</div>
+        <div class="via">6 மாத இன்டர்ன்ஷிப் — சம்பளத்துடன்</div>
+      </div>
+
+    </div>
+    <div class="internship-note fade-up">
+      🤝 6 Months Paid Internship included in all programmes — industry-ready graduates!
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENT -->
+<section>
+  <div class="container">
+    <div class="section-title">🏆 Placement Record</div>
+    <div class="placement-badge fade-up">
+      <div class="placement-pct">100%</div>
+      <div class="placement-label">Placement Assistance</div>
+      <div class="placement-sub">"Your Future, Our Promise!"</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-bg">
+  <div class="container">
+    <div class="section-title">📞 அட்மிஷன் தொடர்புக்கு — Contact Us</div>
+    <div class="contact-grid">
+
+      <div class="contact-item fade-up delay-1">
+        <div class="contact-icon">📞</div>
+        <div class="contact-detail">
+          <div class="title">Phone / Mobile</div>
+          <div class="value">99422 93443</div>
+          <div class="value">95978 74765</div>
+        </div>
+      </div>
+
+      <div class="contact-item fade-up delay-2">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail">
+          <div class="title">Address</div>
+          <div class="address">
+            Near Perundurai Medical College,<br>
+            Kunnathur Road, Seenapuram – 638 057,<br>
+            <strong style="color:var(--yellow)">Erode, Tamil Nadu</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:32px;" class="fade-up">
+      <a class="cta-btn" href="tel:9942293443">📞 Call Now to Enroll</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2025 Kongu Velaar Polytechnic College, Perundurai – Erode. All rights reserved.<br>
+  AICTE Approved | Affiliated to DOTE, Chennai
+</footer>
+
+</body>
+</html>
