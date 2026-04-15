@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kongu Velaar Polytechnic College – Admissions 2025–26</title>
+<title>Konghu Velalar Polytechnic College – Admissions 2026–27</title>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -260,6 +260,35 @@
     font-weight: 600;
     font-size: 15px;
   }
+  .register-float {
+  position: fixed;
+  bottom: 80px; /* WhatsApp buttonக்கு மேலே */
+  right: 20px;
+  background: linear-gradient(135deg, #f5c200, #ffd700);
+  color: #0d2270;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.register-float:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile view */
+@media(max-width:500px){
+  .register-float{
+    padding:14px;
+    border-radius:50%;
+    font-size:18px;
+  }
+}
 
   /* ── PLACEMENT ── */
   .placement-badge {
@@ -321,6 +350,19 @@
     padding: 18px;
     font-size: 12px;
   }
+  .register-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #f5c200;
+  color: #0d2270;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
@@ -336,6 +378,8 @@
   }
 </style>
 </head>
+<!-- Floating Register Button -->
+
 <body>
 
 <!-- HERO -->
@@ -363,8 +407,16 @@
 
 <!-- ADMISSIONS BANNER -->
 <div class="admissions-banner fade-up">
-  🎓 Admissions Open <span>2025 – 2026</span>
+  🎓 Admissions Open <span>2026 – 2027  
 </div>
+<script>
+window.onclick = function(event) {
+  let popup = document.getElementById("popupForm");
+  if (event.target === popup) {
+    popup.style.display = "none";
+  }
+}
+</script>
 
 <!-- TAGLINE -->
 <div class="tagline fade-up delay-1">
@@ -537,15 +589,46 @@
   </div>
 </section>
 
-<!-- PLACEMENT -->
-<section>
+
+<!-- ONLINE ADMISSION FORM -->
+<section style="background:#f8f9ff;padding:40px 20px;">
   <div class="container">
-    <div class="section-title">🏆 Placement Record</div>
-    <div class="placement-badge fade-up">
-      <div class="placement-pct">100%</div>
-      <div class="placement-label">Placement Assistance</div>
-      <div class="placement-sub">"Your Future, Our Promise!"</div>
-    </div>
+    <div class="section-title">📝 Online Admission Form</div>
+
+    <form action="https://formsubmit.co/admissionengg2023@gmail.com" method="POST" style="max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px;">
+
+      <input type="text" name="name" placeholder="Student Name" required style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+
+      <input type="tel" name="phone" placeholder="Mobile Number" required style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+
+      <input type="email" name="email" placeholder="Email ID" style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+
+      <select name="course" required style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+        <option value="">Select Course</option>
+        <option>Automobile Engineering</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>EEE</option>
+        <option>ECE</option>
+        <option>CSE</option>
+        <option>Petrochemical</option>
+        <option>Chemical</option>
+        <option>DMLT</option>
+      </select>
+
+      <select name="qualification" required style="padding:12px;border-radius:8px;border:1px solid #ccc;">
+        <option value="">Qualification</option>
+        <option>SSLC (10th)</option>
+        <option>12th</option>
+      </select>
+
+      <textarea name="message" placeholder="Additional Details" style="padding:12px;border-radius:8px;border:1px solid #ccc;"></textarea>
+
+      <button type="submit" style="background:#1a3fa8;color:white;padding:14px;border:none;border-radius:30px;font-size:16px;font-weight:700;">
+        Submit Application
+      </button>
+
+    </form>
   </div>
 </section>
 
@@ -559,10 +642,27 @@
         <div class="contact-icon">📞</div>
         <div class="contact-detail">
           <div class="title">Phone / Mobile</div>
-          <div class="value">99422 93443</div>
-          <div class="value">95978 74765</div>
+          <div class="value"><h2>99422 93443<h2></h2></div>
+          <div class="value"><h2>95978 74765<h2></h2></div>
         </div>
       </div>
+<!-- WHATSAPP -->
+<a href="https://wa.me/919942293443?text=வணக்கம்%20KVPC%20கல்லூரி,%20நான்%20admission%20பற்றி%20தகவல்%20வேண்டும்." 
+target="_blank"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
+padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold;">
+📲 WhatsApp
+</a>
+
+<script>
+function openForm(){
+ document.getElementById("popupForm").style.display="block";
+}
+function closeForm(){
+ document.getElementById("popupForm").style.display="none";
+}
+</script>
+
 
       <div class="contact-item fade-up delay-2">
         <div class="contact-icon">📍</div>
@@ -578,10 +678,7 @@
 
     </div>
 
-    <div style="text-align:center;margin-top:32px;" class="fade-up">
-      <a class="cta-btn" href="tel:9942293443">📞 Call Now to Enroll</a>
     </div>
-  </div>
 </section>
 
 <!-- FOOTER -->
